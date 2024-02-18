@@ -3,26 +3,26 @@
 }
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    position: relative;
     gap: 50px;
     align-items: center;
     height: 80px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.5);
-    
+    box-shadow: rgba(0, 0, 0, 0.5);   
 }
 .company-name {
     position: relative;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
-    margin-left: 100px;
-    
+    margin-left: 250px;   
+    background-color: red;
 }
 .navigation {
+    display: inline;
     margin-right: 50px;
     font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
-    cursor: pointer;
-      
+    cursor: pointer;     
 }
 
 .navigation:hover {
@@ -41,7 +41,6 @@ li, a {
     width: 100%;
     z-index: 0;
     position: relative;
-
 }
 /* #hero-section {
     position: relative;
@@ -53,8 +52,7 @@ li, a {
     font-size: 70px;
     margin-left: 50px;
     /* margin-bottom: 400px; */
-    margin-top: -400px;
-    
+    margin-top: -400px;   
 }
 h3 {
     position: absolute;
@@ -80,6 +78,38 @@ h3 {
     border-radius: 8px;
 }
 .product-description {
-    padding: 5px;
+    padding: 15px;
     font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+
+}
+h4 {
+    padding: 5px;
+}
+.product-description > p {
+    font-weight: lighter;
+    color: black;
+}
+
+/* Styling for shop */
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: auto;
+}
+#products p {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif; 
+}
+#products h3 {
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif; 
+    position: absolute;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
 }
