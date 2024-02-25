@@ -13,7 +13,7 @@ let products = [
         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
         name: "Airforce 1",
         category: "Jordans",
-        price: 120,
+        price: 130,
     },
     {
         id: 3,
@@ -51,13 +51,20 @@ function displayProducts () {
     const productsSection = document. getElementById ("products");
     products.forEach (product => {
         const productElement = document.createElement('div');
-        productElement.classList.add ('product');
+        productElement.classList.add ('product-container');
         productElement.innerHTML= `
         <img src="./Images/court-vision-low-shoes-mxK2Kk.png" alt="sneakers">
-        <h3> ${product.name}</h3>
+        <button class="btn" onclick="addToCart(${product.id})">Add to card</button>
+        <h4> ${product.name}</h4>
         <p> ${product.category}</p>
         <p> $${product.price}</p>`;
+        
         productsSection.appendChild(productElement);
     })
 } 
+// Add to cart alert when you add an item to cart
+function addToCart (productId) {
+    alert ("productId added to cart")
+}
+
 window. onload = displayProducts
