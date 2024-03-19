@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneaker Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <p class="company-name">Sneaker Head</p>
-        <!-- <div class="company-name">
-            <p>Sneaker Head</p>
-        </div> -->
-        <a href="index.html" class="navigation">Home</a>
-        <a href="shop.html" class="navigation">Shop</a>
-        <a href="#" class="navigation">Look Book</a>
-        <a href="#" class="navigation">Cart</a>  
+    <nav class="navbar">
+        <div class="company-name">
+            <h2>Sneaker Head</h2>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="navigation">Home</a>
+            <a href="shop.html" class="navigation">Shop</a>
+            <a href="#" class="navigation">Lookbook</a>
+            <a href="#" class="navigation"><i class="fa-solid fa-cart-shopping" id="cart-icon"></i>Cart</a> 
+        </div> 
     </nav>
     <main>
         <div id="hero-section">
@@ -25,7 +29,7 @@
         </div>
         <h1 class="our-products">Shop from Our Variety</h1>
         <div id="products">   
-            <div class="product-container">
+            <!-- <div class="product-container">
                 <img src="./Images/court-vision-low-shoes-mxK2Kk.png" alt="shoe">
                 <div class="product-description">
                     <button class="btn">Add to Cart</button>
@@ -51,26 +55,23 @@
                     <p>JORDANS</p>
                     <p>$109</p>
                 </div>
-            </div>
+            </div> -->
         </div>  
+        <div class="new"></div>
     </main>
     <!-- footer goes here -->
-    <!-- <footer>
+    <footer>
         <div class="footer-main">
             <div class="products">
                 <div class="ul">
                     <ul class="links">
                         <h1 class="big-text">Products</h1>
                         <li><a href="#">View All</a></li>
-                        <li><a href="#">Special Offers</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Beats Studio Pro</a></li>
-                        <li><a href="#">Beats Studio Buds +</a></li>
+                        <li><a href="#">Jordans</a></li>
+                        <li><a href="#">Airforce</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">New Balance</a></li>
                         <li><a href="#">Beats Fit Pro</a></li>
-                        <li><a href="#">Beats Studio Buds</a></li>
-                        <li><a href="#">Beats Flex</a></li>
-                        <li><a href="#">Power Beats Pro</a></li>
-                        <li><a href="#">Beats Solo Wireless</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,14 +79,11 @@
                 <div class="ul">
                     <ul class="links">
                         <h1 class="big-text">Support</h1>
-                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Return Policy</a></li>
                         <li><a href="#">Product Help</a></li>
                         <li><a href="#">Service & Warranty</a></li>
                         <li><a href="#">Register Your Beats</a></li>
                         <li><a href="#">Update Your Beats</a></li>
-                        <li><a href="#">Authorized Retailers</a></li>
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">International Numbers</a></li>
                     </ul>
                 </div>
             </div>
@@ -112,9 +110,8 @@
                 <div class="ul">
                     <ul class="links">
                         <h1 class="big-text">Location</h1>
-                        <button class="bn"><strong><img src="./../img/globe.png" alt="" width="15px" style="margin-top: 4px;"> United States | changes </strong></button><br>
-                       
-        
+                        <button class="bn"><strong><img src="./../img/globe.png" alt="" width="15px" style="margin-top: 4px;"> United States | changes </strong></button>
+                        <br> 
                         <ul class="links">
                             <h1 class="big-text follow">Follow Us</h1><br>
                         </ul>
@@ -123,14 +120,15 @@
                             <i class="fa-brands fa-square-instagram"></i>
                             <i class="fa-brands fa-twitter"></i>
                             <i class="fa-brands fa-youtube"></i>
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
         <div>
-            <h3 class="copy">&copy2024 Apple Inc. - All rights reserved.</h3>
+            <h4 class="copy">&copy2024 Apple Inc. - All rights reserved.</h4>
         </div>
-    </footer> -->
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

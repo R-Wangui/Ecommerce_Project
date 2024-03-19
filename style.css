@@ -1,42 +1,44 @@
 * {
     margin: 0;
 }
-nav {
+
+/* Styling the Navbar */
+.navbar {
     display: flex;
-    justify-content: center;
-    position: relative;
-    gap: 50px;
+    justify-content:space-between;
     align-items: center;
+    margin: 0 20px;
     height: 80px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.5);   
 }
 .company-name {
-    position: relative;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
-    margin-left: 250px;   
-    background-color: red;
+    font-family: cursive;
+    
 }
-.navigation {
-    display: inline;
-    margin-right: 50px;
+.navbar .nav-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
     cursor: pointer;     
 }
 
 .navigation:hover {
-    text-decoration: underline 2px solid red;
+    text-decoration: underline 2px solid turquoise;
 }
-/* li {
-    display: flex;
-    justify-content: space-between; 
-} */
-li, a {  
-    list-style: none;
-    text-decoration: none;
-    color: black;
+
+#cart-icon {
+    color: turquoise;
+    cursor: pointer;
+    /* position: absolute; */
+    margin-left: 70px;
+    
 }
+i:hover {
+    scale: 1.2;
+}
+
 #hero-section img {
     width: 100%;
     z-index: 0;
@@ -69,7 +71,7 @@ h3 {
 .products {
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 12px;
     
 }
 .product-container {
@@ -104,12 +106,42 @@ h4 {
     box-shadow: 0 0 0 0.5;
 }
 
+/* Footer styling */
+.footer-main {
+    background-color: rgb(235, 232, 232);
+    border-bottom: 1px solid gray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 4px;
+}
+.copy {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightgray;
+}
+/* li {
+    display: flex;
+    justify-content: space-between; 
+} */
+li, a {  
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
 /* Styling for shop */
 #products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 5px;
+    /* gap: 5px; */
+    row-gap: 20px;
     width: auto;
 }
 #products p {
@@ -121,11 +153,12 @@ h4 {
     position: absolute;
 }
 
-h2 {
+.header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
+    /* background-color: rgb(158, 185, 185); */
 }
 /* button {
     padding: 8px;

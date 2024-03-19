@@ -1,5 +1,6 @@
 // document. getElementsByClassName("our-products") [1]. innerText = "Our Products"
 
+// Data holding our products
 let products = [
     {
         id: 1,
@@ -54,17 +55,32 @@ function displayProducts () {
         productElement.classList.add ('product-container');
         productElement.innerHTML= `
         <img src="./Images/court-vision-low-shoes-mxK2Kk.png" alt="sneakers">
-        <button class="btn" onclick="addToCart(${product.id})">Add to card</button>
-        <h4> ${product.name}</h4>
-        <p> ${product.category}</p>
-        <p> $${product.price}</p>`;
+        <div class="product-description">
+            <button class="btn" onclick="addToCart(${product.id})">Add to cart</button>
+            <h4> ${product.name}</h4>
+            <p> ${product.category}</p>
+            <p> $${product.price}</p>
+        </div>`;
         
         productsSection.appendChild(productElement);
     })
 } 
 // Add to cart alert when you add an item to cart
-function addToCart (productId) {
-    alert ("productId added to cart")
+function addToCart (productId, cartCount) {
+    // alert ("${productId} added to cart")
+    const product = products.find(p => p.id === productId);
+    cartItems.push(product);
+    cartCount++;
+
+    const cartIcon = document.getElementById ("cart-icon");
+    cartIcon. textContent = `cart: ${cartCount}`
 }
+//Updating the cart when you add a product to cart
+let cart = [];
+
+function updateCartIcon () {
+    const cartIcon = document. getElementById ("cart-icon");
+}
+
 
 window. onload = displayProducts
