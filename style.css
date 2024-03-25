@@ -21,7 +21,7 @@
     gap: 50px;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
-    cursor: pointer;     
+    cursor: pointer;   
 }
 
 .navigation:hover {
@@ -105,24 +105,67 @@ h4 {
     scale: 1.2;
     box-shadow: 0 0 0 0.5;
 }
+/* Newsletter styling */
+.newsletter-container {
+    /* display: flex; */
+    flex-direction: column;
+    max-width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(243, 241, 241);
+    box-shadow: 0 0 0 1.5;
+}
+#newsletter-form {
+    margin-top: 20px;
+}
+#email {
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid turquoise;
+}
+#subscribe {
+    background-color: turquoise;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+#subscribe:hover {
+    scale: 1.2;
+}
+#message {
+    margin-top: 20px;
+}
+.fa-solid {
+    color: rgb(0, 0, 44);
+}
 
 /* Footer styling */
 .footer-main {
-    background-color: rgb(235, 232, 232);
+    background-color: rgb(248, 248, 252);
     border-bottom: 1px solid gray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     padding: 4px;
+
 }
-.copy {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: lightgray;
+.links {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.brands {
+    gap: 10px;
 }
 /* li {
     display: flex;
@@ -134,7 +177,12 @@ li, a {
     color: black;
     padding: 4px;
 }
-
+.copy {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightgray;
+}
 /* Styling for shop */
 #products {
     display: flex;

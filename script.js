@@ -73,14 +73,43 @@ function addToCart (productId, cartCount) {
     cartCount++;
 
     const cartIcon = document.getElementById ("cart-icon");
-    cartIcon. textContent = `cart: ${cartCount}`
+    cartIcon.textContent = `cart: ${cartCount}`
 }
 //Updating the cart when you add a product to cart
 let cart = [];
 
 function updateCartIcon () {
-    const cartIcon = document. getElementById ("cart-icon");
+    const cartIcon = document.getElementById ("cart-icon");
 }
 
+// Adding event listeners for the form 
+
+document. addEventListener('DOMContentLoaded', function() {
+    // Adding an event listener to these elements in the DOM so when it loads the events are triggered
+    const form = document.getElementById("newsletter-form");
+    const emailInput = document.getElementById("email");
+    // const subscribe = document.getElementById("subscribe");
+    const message = document.getElementById("message");
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // validating the email
+        const email = emailInput.value 
+        if (validateEmail(email)) {
+            message.textContent = 'Thankyou for subscribing';
+            emailInput.value = '';
+        } else {
+            message.textContent = 'Please enter a valid email';
+        }
+    });
+
+    form.addEventListener('submit', function(event) {
+        alert ("Thankyou for subscribing!")
+    });
+    // function validateEmail(email) {
+    //     const re = /\S+@\S+\.\S+/;
+    //     const re.test(email);
+    // }
+});
 
 window. onload = displayProducts
