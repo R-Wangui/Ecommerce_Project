@@ -46,7 +46,7 @@ let products = [
     }
 ]
 
-// function to display dynamic products
+// function to dynamically display products
 
 function displayProducts () {
     const productsSection = document. getElementById ("products");
@@ -67,7 +67,7 @@ function displayProducts () {
 } 
 // Add to cart alert when you add an item to cart
 function addToCart (productId, cartCount) {
-    // alert ("${productId} added to cart")
+    // alert (`${productId} added to cart`)
     const product = products.find(p => p.id === productId);
     cartItems.push(product);
     cartCount++;
