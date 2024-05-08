@@ -103,9 +103,10 @@ document. addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    form.addEventListener('submit', function(event) {
-        alert ("Thankyou for subscribing!")
-    });
+    // form.addEventListener('submit', function(event) {
+    //     alert ("Thankyou for subscribing!")
+    // });
+    
     // function validateEmail(email) {
     //     const re = /\S+@\S+\.\S+/;
     //     const re.test(email);
