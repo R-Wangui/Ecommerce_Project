@@ -1,54 +1,54 @@
 // document. getElementsByClassName("our-products") [1]. innerText = "Our Products"
 
 // Data holding our products
-let products = [
-    {
-        id: 1,
-        name: "Airforce 1",
-        img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-        category: "Jordans",
-        price: 120,
-    },
-    {
-        id: 2,
-        img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-        name: "Airforce 1",
-        category: "Jordans",
-        price: 130,
-    },
-    {
-        id: 3,
-        img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-        name: "Airforce 1",
-        category: "Jordans",
-        price: 120,
-    },
-    {
-        id: 4,
-        img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-        name: "Airforce 1",
-        category: "Jordans",
-        price: 120,
-    },
-    {
-        id: 5,
-        img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-        name: "Airforce 1",
-        category: "Jordans",
-        price: 120,
-    },
-    {
-        id: 6,
-        img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-        name: "Airforce 1",
-        category: "Jordans",
-        price: 120,
-    }
-]
+// let products = [
+//     {
+//         id: 1,
+//         name: "Airforce 1",
+//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
+//         category: "Jordans",
+//         price: 120,
+//     },
+//     {
+//         id: 2,
+//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
+//         name: "Airforce 1",
+//         category: "Jordans",
+//         price: 130,
+//     },
+//     {
+//         id: 3,
+//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
+//         name: "Airforce 1",
+//         category: "Jordans",
+//         price: 120,
+//     },
+//     {
+//         id: 4,
+//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
+//         name: "Airforce 1",
+//         category: "Jordans",
+//         price: 120,
+//     },
+//     {
+//         id: 5,
+//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
+//         name: "Airforce 1",
+//         category: "Jordans",
+//         price: 120,
+//     },
+//     {
+//         id: 6,
+//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
+//         name: "Airforce 1",
+//         category: "Jordans",
+//         price: 120,
+//     }
+// ]
 
 // function to dynamically display products
 
-function displayProducts () {
+function displayProducts ({data}) {
     const productsSection = document. getElementById ("products");
     products.forEach (product => {
         const productElement = document.createElement('div');
