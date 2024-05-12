@@ -1,3 +1,4 @@
+import data from 'data'
 // document. getElementsByClassName("our-products") [1]. innerText = "Our Products"
 
 // Data holding our products
