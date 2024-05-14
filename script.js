@@ -1,55 +1,10 @@
-import data from 'data'
+import products from './data.js';
+
 // document. getElementsByClassName("our-products") [1]. innerText = "Our Products"
 
-// Data holding our products
-// let products = [
-//     {
-//         id: 1,
-//         name: "Airforce 1",
-//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-//         category: "Jordans",
-//         price: 120,
-//     },
-//     {
-//         id: 2,
-//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-//         name: "Airforce 1",
-//         category: "Jordans",
-//         price: 130,
-//     },
-//     {
-//         id: 3,
-//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-//         name: "Airforce 1",
-//         category: "Jordans",
-//         price: 120,
-//     },
-//     {
-//         id: 4,
-//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-//         name: "Airforce 1",
-//         category: "Jordans",
-//         price: 120,
-//     },
-//     {
-//         id: 5,
-//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-//         name: "Airforce 1",
-//         category: "Jordans",
-//         price: 120,
-//     },
-//     {
-//         id: 6,
-//         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
-//         name: "Airforce 1",
-//         category: "Jordans",
-//         price: 120,
-//     }
-// ]
 
 // function to dynamically display products
-
-function displayProducts ({data}) {
+function displayProducts () {
     const productsSection = document. getElementById ("products");
     products.forEach (product => {
         const productElement = document.createElement('div');
@@ -64,27 +19,28 @@ function displayProducts ({data}) {
         </div>`;
         
         productsSection.appendChild(productElement);
-    })
+    });
 } 
+
 // Add to cart alert when you add an item to cart
-function addToCart (productId, cartCount) {
+function addToCart (productId) {
     // alert (`${productId} added to cart`)
     const product = products.find(p => p.id === productId);
-    cartItems.push(product);
-    cartCount++;
+    cart.push(product);
+    updateCartIcon();
 
-    const cartIcon = document.getElementById ("cart-icon");
-    cartIcon.textContent = `cart: ${cartCount}`
+    // const cartIcon = document.getElementById ("cart-icon");
+    // cartIcon.textContent = `cart: ${cartCount}`
 }
 //Updating the cart when you add a product to cart
 let cart = [];
-
 function updateCartIcon () {
-    const cartIcon = document.getElementById ("cart-icon");
+    const cartIcon = document.getElementById("cart-icon");
+    cartIcon.textContent = `Cart: ${cart.length}`;
 }
 
-// Adding event listeners for the form 
 
+// Adding event listeners for the form 
 document. addEventListener('DOMContentLoaded', function() {
     // Adding an event listener to these elements in the DOM so when it loads the events are triggered
     const form = document.getElementById("newsletter-form");

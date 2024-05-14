@@ -1,4 +1,4 @@
- export let products = [
+ let products = [
     {
         id: 1,
         img: `./Images/court-vision-low-shoes-mxK2Kk.png`,
@@ -42,3 +42,5 @@
         price: 120,
     }
 ]
+
+export default products;
