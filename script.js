@@ -38,6 +38,15 @@ function updateCartIcon () {
     const cartIcon = document.getElementById("cart-icon");
     cartIcon.textContent = `Cart: ${cart.length}`;
 }
+// Adding event listeners to the add to cart button
+const addToCartButtons = document.querySelectorAll("btn");
+addToCartButtons.forEach(button => {
+    const productId = parseInt(button.products.id)
+    button.addEventListener('click', () => {
+        addToCart(productId);
+    });
+})
+
 
 
 // Adding event listeners for the form 
