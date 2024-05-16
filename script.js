@@ -5,7 +5,7 @@ import products from './data.js';
 
 // function to dynamically display products
 function displayProducts () {
-    const productsSection = document. getElementById ("products");
+    const productsSection = document.getElementById ("products");
     products.forEach (product => {
         const productElement = document.createElement('div');
         productElement.classList.add ('product-container');
@@ -24,10 +24,10 @@ function displayProducts () {
 
 // Add to cart alert when you add an item to cart
 function addToCart (productId) {
-    // alert (`${productId} added to cart`)
-    const product = products.find(p => p.id === productId);
-    cart.push(product);
-    updateCartIcon();
+    alert (`${productId} added to cart`)
+    // const product = products.find(p => p.id === productId);
+    // cart.push(product);
+    // updateCartIcon();
 
     // const cartIcon = document.getElementById ("cart-icon");
     // cartIcon.textContent = `cart: ${cartCount}`
@@ -41,7 +41,7 @@ function updateCartIcon () {
 // Adding event listeners to the add to cart button
 const addToCartButtons = document.querySelectorAll("btn");
 addToCartButtons.forEach(button => {
-    const productId = parseInt(button.products.id)
+    const productId = parseInt(button.dataset.id)
     button.addEventListener('click', () => {
         addToCart(productId);
     });
