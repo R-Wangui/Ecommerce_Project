@@ -41,7 +41,7 @@ function updateCartIcon () {
 // Adding event listeners to the add to cart button
 const addToCartButtons = document.querySelectorAll("btn");
 addToCartButtons.forEach(button => {
-    const productId = parseInt(button.dataset.id)
+    const productId = (button.products.id)
     button.addEventListener('click', () => {
         addToCart(productId);
     });
